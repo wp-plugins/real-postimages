@@ -2,7 +2,7 @@
 
 Contributors: Realist
 Donate link:
-Tags: real, real., real.postimages, postimages, images, image, thumb, thumbnail, thumbnails, admin, post, media, gallery, реалист, картинка, миниатюра, картинки, миниатюры, админ, пост, запись, медиа, изображения, галерея
+Tags: real, real., real.postimages, postimages, post images, images, image, thumb, thumbnail, thumbnails, admin, post, media, gallery, реалист, картинка, миниатюра, картинки, миниатюры, админ, пост, запись, медиа, изображения, галерея
 Requires at least: 4.1.1
 Tested up to: 4.1.1
 Stable tag: 1.0
