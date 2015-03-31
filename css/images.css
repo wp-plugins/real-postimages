@@ -1,0 +1,36 @@
+#realpostimages_post_images .images {
+  margin-bottom: 10px;
+}
+#realpostimages_post_images label {
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#realpostimages_post_images input[type="checkbox"] {
+  display: none;
+}
+#realpostimages_post_images input[type="checkbox"] + img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  border: 3px solid #fff;
+  padding: 1px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#realpostimages_post_images input[type="checkbox"] + img:hover {
+  border-color: #2EA5DE;
+}
+#realpostimages_post_images input[type="checkbox"]:checked + img {
+  border-color: #1e8cbe;
+}
+#realpostimages_post_images input[type="checkbox"]:checked + img:hover {
+  border-color: #B71A0D;
+}
