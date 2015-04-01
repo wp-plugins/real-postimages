@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: real.PostImages
-Version: 1.0
+Version: 1.1
 Plugin URI:
 Description: Дает возможность прикреплять дополнительные изображения к записям (в отдельной области, как дополнительное поле). <a href="https://wordpress.org/plugins/real-postimages/">English Description</a>
 Author: Realist
@@ -61,6 +61,20 @@ function realpostimages_save_meta_images($post_id) {
     }
   }
   update_post_meta($post_id, 'realpostimages_post_images', $data);
+}
+
+// Формирует массив с информацией об изображениях записи
+function get_post_images($post_id = false)
+{
+  global $post;
+  $post_id = ($post_id) ? $post_id : $post->ID;
+  $pre = get_post_meta($post_id, 'realpostimages_post_images');
+  if ($pre !== false and isset($pre[0])) {
+    foreach ($pre[0] as $id => $data) {
+      $r[$id] = $data;
+    }
+  }
+  return (isset($r)) ? $r : '';
 }
 
 // real.Donate

@@ -17,9 +17,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Плагин дает возможность прикреплять дополнительные изображения к записям (в отдельной области, как дополнительное поле).
 
+Для получения массива с информацией об изображениях записи, можно использовать функцию `get_post_images($post_id)`. Если параметр `$post_id` не указан, то будет взят ID текущей записи `$post->ID`.
+
 *Machine translation:*
 
 The plugin gives you the possibility to add images to the posts (in separate area, as an custom field).
+
+To get the array with information about the posts images, you can use the function `get_post_images($post_id)`. If the parameter `$post_id` is not specified, it will be taken ID of the current post `$post->ID`.
 
 == Installation ==
 
@@ -36,4 +40,10 @@ Like any other WordPress plugin.
 
 == Changelog ==
 
-none
+= 1.1 =
+
+* Добавлена функция для получения информации об изображениях записи `get_post_images($post_id)`.
+
+*Machine translation:*
+
+* Added function to get information about the posts images `get_post_images($post_id)`.
